@@ -23,7 +23,7 @@ public static void main(String[] args) {
         System.out.print("Masukkan tinggi prisma segitiga\t\t:");
         tinggiPrisma= sc.nextInt();
 
-        luas = 1/2 * (sisi * tinggi);
+        luas = 0.5 * sisi * tinggi;
         keliling = sisi + sisi + sisi;
         volume = ((sisi * tinggi) / 2) * tinggiPrisma;
         luasPermukaan = (2 * luas) + (keliling * tinggiPrisma);
