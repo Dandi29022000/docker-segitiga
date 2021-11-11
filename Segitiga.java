@@ -8,21 +8,22 @@ public static void main(String[] args) {
         String nama, nim, kelas;
         double sisi, tinggi, tinggiPrisma, luas, luasPermukaan, keliling, volume;
 
+        System.out.println("-------------------------------------------------");
         System.out.print("Masukkan Nama\t\t:");
         nama = sc.nextLine();
         System.out.print("Masukkan NIM\t\t:");
         nim = sc.nextLine();
         System.out.print("Masukkan Kelas\t\t:");
         kelas = sc.nextLine();
-
-        System.out.print("Masukkan sisi segitiga\t\t:");
+        System.out.println("-------------------------------------------------");
+        System.out.print("Masukkan sisi segitiga\t\t\t:");
         sisi= sc.nextInt();
         System.out.print("Masukkan tinggi segitiga\t\t:");
         tinggi= sc.nextInt();
         System.out.print("Masukkan tinggi prisma segitiga\t\t:");
         tinggiPrisma= sc.nextInt();
 
-        luas = 1/2 * sisi * tinggi;
+        luas = 1/2 * (sisi * tinggi);
         keliling = sisi + sisi + sisi;
         volume = ((sisi * tinggi) / 2) * tinggiPrisma;
         luasPermukaan = (2 * luas) + (keliling * tinggiPrisma);
